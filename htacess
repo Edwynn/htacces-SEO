@@ -2,9 +2,9 @@
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-RewriteCond %{HTTP_HOST} !^logisticadmt.com$
-RewriteRule (.*) https://logisticadmt.com/$1 [L,R=301]
-RewriteRule ^index.php$ https://logisticadmt.com/ [R=301,L]
+RewriteCond %{HTTP_HOST} !^domain.com$
+RewriteRule (.*) https://domain.com/$1 [L,R=301]
+RewriteRule ^index.php$ https://domain.com/ [R=301,L]
 
 </IfModule>
 
